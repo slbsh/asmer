@@ -1,5 +1,5 @@
 # asmer 
-A simple web server written in x86_\64 (AT&T) assembly.  
+A simple web server written in x86\_64 (AT&T) assembly.  
 
 It serves the contents of the `index.html` file in the current directory on port 8080, and that's all, there's also some logging, but yeah. 
 Might Implement a parser in the future, hot reload of the files served, and some cmdline args.
