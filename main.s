@@ -45,9 +45,6 @@ index_buf:    .space INDEX_BUF_SIZE
 
 conv_buf:     .quad 0  /* for uint -> ascii */
 
-.section .text
-.globl   _start 
-
 .macro write dest, msg, len
    movq $0x01, %rax
    movl \dest, %edi
@@ -86,6 +83,9 @@ conv_buf:     .quad 0  /* for uint -> ascii */
    movq \len, %rdx
    syscall
 .endm
+
+.section .text
+.globl   _start 
 
 _start:
 /* open index file */
